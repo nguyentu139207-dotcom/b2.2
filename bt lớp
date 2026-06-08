@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style> 
+            body {
+                width: 800px;;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="width: 100%;text-align: center;">ĐĂNG KÝ TÀI KHOẢN THÔNG TIN CÁ NHÂN</h1>
+        <form action="/action_page.php" method="post">
+            <table style="width:100%;">
+                <tr>
+                    <td style="width: 20%;">Tài khoản</td>
+                    <td styde="width:80%">
+                        <input type="text" id="iduser" name="username" style="width: 300px;">
+                </tr>
+                <tr>
+                    <td style="width: 20%;">Mật khẩu:</td>
+                    <td style="width: 80%;">
+                        <input type="text" id="iduser" name="username" style="width: 300px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">Mật khẩu:</td>
+                    <td style="width: 80%;">
+                        <input type="password" id="idpass" name="password" style="width: 300px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">Nhập lại mật khẩu:</td>
+                    <td style="width: 80%;">
+                        <input type="password" id="idpass" name="password" style="width: 300px;">                           
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">Email</td>
+                    <td style="width: 80%;">
+                        <input type="email" id="idemail" name="email" style="width: 300px;">
+                    </td>
+                </tr>
+            <tr>
+                <td style="width: 20%;">Họ tên:</td>
+                <td style="width: 80%;">
+                    <input type="text" id="idname" name="name" style="width: 300px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%;">Giới tính:          
+            </td>
+                <td style="width: 80%;">
+                    <input type="radio" id="idnam" name="GT" value="Nam"><label for="idnam">Nam</label>
+                    <input type="radio" id="idnu" name="GT" value="Nữ"><label for="idnu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+            <td style="width: 20%;">Quê quán:</td>
+            <td style="width: 80%;">
+                    <select id="idQQ" name="Quequan" style="width: 300px;">
+                        <option value="Hưng Yên">Hưng Yên</option>
+                        <option value="Hải Dương">Hải Dương</option>
+                        <option value="Bắc Giang">Bắc Giang</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+            </td>
+            </tr>
+                <tr>
+            <td style="width: 20%;">Sở thích:</td>
+            <td style="width: 80%;">
+                <input type="checkbox" id="idthich1" name="Sothich" value="Đọc sách"><label for="idthich1">Đọc sách</label>
+                <input type="checkbox" id="idthich2" name="Sothich" value="Nghe nhạc"><label for="idthich2">Nghe nhạc</label>
+                <input type="checkbox" id="idthich3" name="Sothich" value="Xem phim"><label for="idthich3">Xem phim</label>               
+            </td>
+        </tr>
+            <tr>
+            <td style="width: 20%;">Ghi chú cá nhân:</td>
+            <td style="width: 80%;">
+            <textarea name="Ghi chú cá nhân" rows="4" cols="40%"></textarea>
+            </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 59%;"></td>
+                <td style="width: 80%;">
+                    <input type="submit" value="Lưu">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
