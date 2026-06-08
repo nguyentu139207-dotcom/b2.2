@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu mẫu khảo sát ITviec</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .khung-ngoai {
+            width: 70%;
+            margin: 30px auto;
+            padding: 15px;
+            border: 3px solid #ccc;
+            background-color: #119307; /* nền xanh */
+        }
+        .khung-trong {
+            background-color: #ffffff;
+            border: 2px solid #012449;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0073e6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 5px;
+        }
+        .submit-btn {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="khung-ngoai">
+        <div class="khung-trong">
+            <h1>Biểu mẫu khảo sát ITviec</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Tuổi</label>
+                    <input type="number" id="age" name="age" placeholder="Nhập tuổi">
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Hiện tại bạn đang là?</label>
+                    <select id="role" name="role">
+                        <option value="student">Học sinh/Sinh viên</option>
+                        <option value="developer">Học sinh</option>
+                        <option value="manager">Sinh viên</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Bạn sẽ giới thiệu ITviec với bạn bè chứ?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="recommend" value="yes"> Có</label>
+                        <label><input type="radio" name="recommend" value="no"> Không</label>
+                        <label><input type="radio" name="recommend" value="maybe"> Có thể</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ngôn ngữ lập trình và Framework bạn đã biết? (Có thể chọn nhiều đáp án)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skills" value="C"> C</label>
+                        <label><input type="checkbox" name="skills" value="C++"> C++</label>
+                        <label><input type="checkbox" name="skills" value="C#"> C#</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Bạn có câu hỏi gì cho ITviec không?</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
